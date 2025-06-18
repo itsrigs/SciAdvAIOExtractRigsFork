@@ -6,4 +6,6 @@ Windows and Linux systems are supported. Linux requires mono or wine to use some
 
 To extract CPK files (Chaos;Head Noah, Robotics;Notes Elite and DaSH) an extra download of [CriPakTools.exe](https://github.com/esperknight/CriPakTools) is necessary. You can download the latest release from the releases section.
 
+MPV is generally able to recognise the format on even unknown video and audio files (if run from terminal). So if you want to extract A/V MPV or other software capable of detecting media formats is strongly recommended.
+
 This project is mostly licensed under the GNU GPL-v3 License, apart from files contained in the libs folder (MIT) and [FreeMote By UlyssesWu](https://github.com/UlyssesWu/FreeMote) (CC-BY-NC-SA 4.0), this means that you cannot use the extractor commercially for extracting Anonymous;Code or other psb.m
