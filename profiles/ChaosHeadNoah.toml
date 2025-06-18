@@ -1,0 +1,7 @@
+name = "Chaos;Head Noah Steam"
+description = "# Extracts Chaos;Head Noah Steam version files.\nCharacter conversion is supported to mvl json for [Manicsteiner's MVL Preview](https://github.com/Manicsteiner/mvl_preview)"
+filetype = "cpk"
+path = "CHAOS;HEAD NOAH/Data/"
+sprites = ["chara.cpk", "chara_dlc.cpk"]
+processor = "chn-mvl"
+pfiletype = ""

@@ -1,0 +1,9 @@
+name = "Steins;Gate Steam"
+description = """# Extracts Steins;Gate Steam version files.\n
+Character conversion is supported to plain .PNG files for chara.mpk.
+"""
+filetype = "mpk"
+path = "STEINS;GATE/USRDIR/"
+sprites = ["chara.mpk"]
+processor = "lay"
+pfiletype = "lay"

@@ -1,0 +1,9 @@
+name = "Steins;Gate My Darling's Embrace Steam"
+description = """# Extracts Steins;Gate Steam version files.\n
+Character conversion is supported to plain .PNG files for chara.mpk.
+"""
+filetype = "mpk"
+path = "SG_My Darling's Embrace/USRDIR/"
+sprites = ["chara.mpk"]
+processor = "lay"
+pfiletype = "lay"

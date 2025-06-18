@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>732</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Science Adverture All In One asset extractor</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QLabel" name="label">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Maximum" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="toolTip">
+         <string>Profile used to detect which files to extract and/or how to process them</string>
+        </property>
+        <property name="text">
+         <string>Profile:</string>
+        </property>
+        <property name="buddy">
+         <cstring>profileComboBox</cstring>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="profileComboBox">
+        <property name="toolTip">
+         <string>Profile used to detect which files to extract and/or how to process them</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QTextEdit" name="descText">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Minimum">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>100</height>
+       </size>
+      </property>
+      <property name="sizeAdjustPolicy">
+       <enum>QAbstractScrollArea::SizeAdjustPolicy::AdjustToContents</enum>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+      <property name="textInteractionFlags">
+       <set>Qt::TextInteractionFlag::LinksAccessibleByKeyboard|Qt::TextInteractionFlag::LinksAccessibleByMouse</set>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_2">
+      <property name="toolTip">
+       <string>USRDIR, windir, or game install folder</string>
+      </property>
+      <property name="text">
+       <string>Game archive files location:</string>
+      </property>
+      <property name="buddy">
+       <cstring>pathLineEdit</cstring>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <widget class="QLineEdit" name="pathLineEdit">
+        <property name="toolTip">
+         <string>USRDIR, windir, or game install folder</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="browseButton">
+        <property name="toolTip">
+         <string>USRDIR, windir, or game install folder</string>
+        </property>
+        <property name="text">
+         <string>Browse</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_3">
+      <property name="text">
+       <string>Select archives to extract</string>
+      </property>
+      <property name="buddy">
+       <cstring>fileListWidget</cstring>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QListWidget" name="fileListWidget">
+      <property name="horizontalScrollBarPolicy">
+       <enum>Qt::ScrollBarPolicy::ScrollBarAlwaysOff</enum>
+      </property>
+      <property name="sizeAdjustPolicy">
+       <enum>QAbstractScrollArea::SizeAdjustPolicy::AdjustToContents</enum>
+      </property>
+      <property name="editTriggers">
+       <set>QAbstractItemView::EditTrigger::NoEditTriggers</set>
+      </property>
+      <property name="showDropIndicator" stdset="0">
+       <bool>false</bool>
+      </property>
+      <property name="alternatingRowColors">
+       <bool>true</bool>
+      </property>
+      <property name="selectionMode">
+       <enum>QAbstractItemView::SelectionMode::MultiSelection</enum>
+      </property>
+      <property name="resizeMode">
+       <enum>QListView::ResizeMode::Adjust</enum>
+      </property>
+      <property name="layoutMode">
+       <enum>QListView::LayoutMode::Batched</enum>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QCheckBox" name="convertCheckBox">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="toolTip">
+       <string>If possible converts the jumbled character sprites into plain PNG files.</string>
+      </property>
+      <property name="text">
+       <string>Convert sprites and other compatible files when possible</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QCheckBox" name="keepConvCheckBox">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="toolTip">
+       <string>After conversion is done, keep the unconverted character sprites on disk</string>
+      </property>
+      <property name="text">
+       <string>Keep unconverted files</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_4">
+      <property name="toolTip">
+       <string>Any writable location of filesystem</string>
+      </property>
+      <property name="text">
+       <string>Select location to extract to:</string>
+      </property>
+      <property name="buddy">
+       <cstring>pathLineEdit_2</cstring>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_3">
+      <item>
+       <widget class="QLineEdit" name="pathLineEdit_2">
+        <property name="toolTip">
+         <string>Any writable location of filesystem</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="browseButton_2">
+        <property name="toolTip">
+         <string>Any writable location of filesystem</string>
+        </property>
+        <property name="text">
+         <string>Browse</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QPushButton" name="extractButton">
+      <property name="text">
+       <string>EXTRACT!</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>30</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>profileComboBox</tabstop>
+  <tabstop>descText</tabstop>
+  <tabstop>pathLineEdit</tabstop>
+  <tabstop>browseButton</tabstop>
+  <tabstop>fileListWidget</tabstop>
+  <tabstop>convertCheckBox</tabstop>
+  <tabstop>keepConvCheckBox</tabstop>
+  <tabstop>pathLineEdit_2</tabstop>
+  <tabstop>browseButton_2</tabstop>
+  <tabstop>extractButton</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

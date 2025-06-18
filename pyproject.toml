@@ -1,0 +1,5 @@
+[project]
+name = "SciAdvAIOExtract"
+
+[tool.pyside6-project]
+files = ["main.py", "mainwindow.ui", "progressdialog.ui", "extractor.py", "libs/__init__.py", "libs/lay.py", "libs/mpk.py", "libs/mvl_steam_CHN.py"]

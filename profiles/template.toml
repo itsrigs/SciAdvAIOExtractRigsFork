@@ -1,0 +1,16 @@
+# Name which will show in the dropdown
+name = "Template Profile"
+# Description of what the profile will attempt. Multi line strings are supported with markdown formatting
+description = "Description"
+# Can be mpk,cpk,psb.m
+filetype = "mpk"
+# path is from steamapps/common folder (use / for folder separation leading / will result a path from root of fs) for non-steam don't specify path
+path = "AC/windata"
+# the files containing (usually) sprites (can be ommited if sprites can't/shouldn't be further processed)
+sprites = ["chara.cpk", "chara_dlc.cpk"]
+# the tool to process the sprites (can be lay, chn-mvl)
+processor = "lay"
+# which filetype to push to processor
+pfiletype = "lay"
+# for psb.m only - specify the key to the psb.m, "detect <exe path>" attempts to detect from executable (specify path relative from data files) if it fails programme asks user or use "ask user" to force ask
+mkey = "detect ../game.exe"
