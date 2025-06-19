@@ -1,7 +1,4 @@
-# The Part Where Rigs Says What They Did
-I added Occultic;Nine support in a couple ways
-
-# Science Adventure series All in One universal extractor (Original description)
+# Science Adventure series All in One universal extractor
 
 This project aims to unify and simplify the process of extracting science adventure visual novels for non-technical people.
 Simply select a profile, point it to your install, select an output folder, and press go!
